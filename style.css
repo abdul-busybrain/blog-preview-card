@@ -1,0 +1,117 @@
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Yellow: hsl(47, 88%, 63%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("ttf");
+  src: url("./assets/fonts/static/Figtree-SemiBold.ttf") format("ttf");
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("ttf");
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("ttf");
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  background-color: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  width: 300px;
+  /* height: 20%; */
+}
+
+main {
+  background-color: var(--White);
+  padding: 20px;
+  box-shadow: 0.8rem 1rem var(--Black);
+  border-radius: 1rem;
+}
+
+img.illustration-article {
+  border-radius: 1rem;
+  display: block;
+  width: 100%;
+}
+
+.topic {
+  border-radius: 6px;
+  background-color: var(--Yellow);
+  color: var(--Black);
+  width: max-content;
+  padding: 3px;
+}
+
+
+.date {
+  font-weight: 400;
+  color: var(--Black);
+}
+
+.heading {
+  font-weight: 800;
+  font-size: x-large;
+  color: var(--Black);
+  width: fit-content;
+}
+
+.heading:hover{
+    cursor: pointer;
+    color: var(--Yellow);
+}
+
+.para {
+  color: var(--Grey);
+  font-size: 16px;
+}
+
+.author,
+.image-avatar,
+.greg {
+  display: flex;
+  align-items: center;
+}
+
+.author h2 {
+  font-weight: bolder;
+  color: var(--Black);
+  font-size: 15px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* margin: 80px auto; 
+        /* width: 300px; */
+    }
+
+    main{
+        width: 360px;
+    }
+    .para {
+        color: var(--Grey);
+        font-size: 12px;
+      }
+
+}
